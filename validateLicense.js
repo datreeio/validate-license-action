@@ -8,7 +8,8 @@ program
 async function main() {
   const event = JSON.parse(fs.readFileSync('/github/workflow/event.json', 'utf8'))
   const validLicenses = program.licenses.split(',').map(val => val.toLowerCase())
-  let repoLicense = event.repository.license
+  let repoLicense
+  if (event.repository.license) repoLicense = event.repository.license.key
   console.log(event)
   console.log(process.argv)
   console.log(validLicenses)
