@@ -1,4 +1,4 @@
 #!/bin/sh -l
 ls -sla
 cd /
-node validateLicense.js
+node validateLicense.js -l $*

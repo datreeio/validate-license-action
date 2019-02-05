@@ -1,0 +1,23 @@
+{
+  "name": "validate-license-action",
+  "version": "1.0.0",
+  "description": "Validate a license file exists and is one of the allowed licenses",
+  "main": "validateLicense.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datreeio/validate-license-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datreeio/validate-license-action/issues"
+  },
+  "homepage": "https://github.com/datreeio/validate-license-action#readme",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}
