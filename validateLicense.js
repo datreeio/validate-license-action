@@ -1,3 +1,4 @@
+const fs = require('fs')
 async function main() {
   const event = JSON.parse(fs.readFileSync('/github/workflow/event.json', 'utf8'))
   console.log(event)
