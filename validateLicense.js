@@ -11,6 +11,8 @@ async function main() {
   const repoLicense = event.repository.license
   console.log(event)
   console.log(process.argv)
+  console.log(validLicenses)
+  console.log(repoLicense)
 }
 
 if (require.main === module) {
